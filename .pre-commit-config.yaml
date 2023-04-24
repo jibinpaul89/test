@@ -1,0 +1,21 @@
+default_language_version:
+    python: python3.8
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+    -   id: check-json
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+        types: [python, json, yaml]
+    -   id: trailing-whitespace
+        types: [python]
+-   repo: https://github.com/psf/black
+    rev: 22.6.0
+    hooks:
+    -   id: black
+-   repo: https://github.com/PyCQA/flake8
+    rev: 4.0.1
+    hooks:
+    -   id: flake8
+
